@@ -1,0 +1,24 @@
+{
+  "name": "democypress",
+  "version": "1.0.0",
+  "description": "Pruebas demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run --spec DemoCypress/cypress/e2e/Curso/ValidandoTitle.cy.js --browser edge",
+    "test2": "cypress run --spec cypress/e2e/smoketestbanco.cy.js --browser firefox"
+  },
+  "author": "ING Juan Camilo",
+  "license": "ISC",
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.5",
+    "cypress": "^13.3.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-plugin-tab": "^1.0.5",
+    "cypress-xpath": "^2.0.1"
+  },
+  "cypress-cucumber-preprocessor":{
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "cypress/e2e"
+  }
+}
